@@ -2,7 +2,7 @@
 
 Simple program - that reads an external file containing the close of a certain stock, and compares one trade at a time from last 15 days to now and determines if the stock is moving up and tells me the percentage.
 
-A sample data file of only the closing price is 
+## A sample data file of only the closing price is 
 
 ```
 159.195938
@@ -24,7 +24,7 @@ A sample data file of only the closing price is
 ```
 
 
-Code that reads the file and compares line by line
+## Code that reads the file and compares line by line
 
 ```
 #include <stdio.h>
@@ -76,3 +76,43 @@ int main ( ) {
 }
 
 ```
+
+
+## Output - Note the percentage in the last line- that tells stock moved 50% of the time.
+
+```
+lines are 15
+159
+159
+161
+163
+166
+165
+165
+168
+165
+164
+165
+167
+171
+167
+164
+ 0) ref = 159  list[i+1] = 159,  moving-avg 0
+ 1) ref = 159  list[i+1] = 161,  moving-avg 0
+ 2) ref = 161  list[i+1] = 163,  moving-avg 1
+ 3) ref = 163  list[i+1] = 166,  moving-avg 2
+ 4) ref = 166  list[i+1] = 165,  moving-avg 3
+ 5) ref = 165  list[i+1] = 165,  moving-avg 3
+ 6) ref = 165  list[i+1] = 168,  moving-avg 3
+ 7) ref = 168  list[i+1] = 165,  moving-avg 4
+ 8) ref = 165  list[i+1] = 164,  moving-avg 4
+ 9) ref = 164  list[i+1] = 165,  moving-avg 4
+ 10) ref = 165  list[i+1] = 167,  moving-avg 5
+ 11) ref = 167  list[i+1] = 171,  moving-avg 6
+ 12) ref = 171  list[i+1] = 167,  moving-avg 7
+ 13) ref = 167  list[i+1] = 164,  moving-avg 7
+ 14) ref = 164  list[i+1] = 0,  moving-avg 7
+ Percentage = 46.67
+ 
+ 
+ ```

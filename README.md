@@ -2,7 +2,11 @@
 
 Simple program - that reads an external file containing the close of a certain stock, and compares one trade at a time from last 15 days to now and determines if the stock is moving up and tells me the percentage.
 
-## A sample data file of only the closing price is 
+## A sample data file of only the closing price for last 15 days is :
+
+https://www.investopedia.com/terms/m/movingaverage.asp
+
+## Method 1: Below is a sample using one close over the next day
 
 ```
 159.195938
@@ -116,3 +120,11 @@ lines are 15
  
  
  ```
+
+
+## Method Two:
+
+
+Calculate the mean of the closing prices.
+
+

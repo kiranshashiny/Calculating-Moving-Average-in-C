@@ -1,5 +1,8 @@
 # Calculating-%% Percentage_a_Stock moved in 15 days. C Program
 
+![image](https://user-images.githubusercontent.com/14288989/229139936-b56d8e8b-8f62-4f48-9625-8eba539b88b4.png)
+
+
 Simple program - that reads an external file containing the close of a certain stock, and compares one trade at a time from last 15 days to now and determines if the stock is moving up and tells me the percentage.
 
 ## A sample data file of only the closing price for last 15 days is :
